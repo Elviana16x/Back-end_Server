@@ -26,9 +26,9 @@ if (isset($_POST['nama'])
             )
         ");
 
-    if ($buat_data) {
+    if ($buat_data != null) {
         $pesan = 'data berhasil di simpan';
-        } else if ($buat_data) {
+        } else if ($buat_data == null) {
         $pesan = 'data kosong';
     } else {
         $pesan = 'data gagal di simpan';
